@@ -7,14 +7,13 @@ import { TaskService } from 'src/app/task.service';
   styleUrls: ['./new-list.component.scss']
 })
 export class NewListComponent implements OnInit {
-
   constructor(private taskservices: TaskService) { }
 
   ngOnInit(): void {
   }
 
-  createList(titile: string) {
-    this.taskservices.createList('testing').subscribe((response: any) => {
+  createList(title: string) {
+    this.taskservices.createList(title).subscribe((response: any) => {
       console.log(response)
     })
   }
