@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+$turquise: #44ddd0;
+$green: #27d7a1;
+$light-greeen: #45f69e;
+$light: #f8f8f8;
+$dark-green: rgb(0, 100, 80);
+
+// Update Bulma global variable
+$family-sans-serif: 'Nunito', sans-serif;
+
+$primary: $green;
+$link: $light-greeen;
+
+//update some bulma component variable
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+//set custom global style(will be applied whole app)
+html{
+    background: linear-gradient(to right top, $turquise, $green);
+}
+
+body, html {
+    height: 100%;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
